@@ -1,0 +1,25 @@
+<h2>Por capital</h2>
+<hr>
+<div class="row">
+  <div class="col">
+<!-- SearchBox -->
+<!--(onValue)="uf_buscarPorCapital($event)"-->
+ <shared-search-box
+    (ue_onDebounce)="uf_buscarPorCapital($event)"
+    gs_placeholder="Buscar por capital">
+  </shared-search-box>
+
+
+</div>
+</div>
+<div class="row">
+  <div class="col">
+    <hr>
+    <shared-loadind-spinner *ngIf="isLoadind"></shared-loadind-spinner>
+    <ul>
+      <tabla-pais [paises]="paises"></tabla-pais>
+    </ul>
+
+  </div>
+
+</div>

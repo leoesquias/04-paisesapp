@@ -1,0 +1,9 @@
+
+<!-- (keyup)="ue_onKeyPress(txtInput.value)" -->
+<input
+type="text"
+class="form-control"
+[placeholder]="gs_placeholder"
+(keyup.enter)="uf_emitValue(txtInput.value)"
+#txtInput
+>
